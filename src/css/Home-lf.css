@@ -1,0 +1,92 @@
+.form-container label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #d1bc85;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 15px;
+}
+
+label i{
+    color: #d0ad53;
+}
+
+label i:hover {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+select {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #d1bc85;
+    background-color: #0b1d26;
+    color: #fff;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #d0ad53;
+    background-color: #0b1d26;
+}
+
+select:focus {
+    outline: none;
+    border-color: #d0ad53;
+    background-color: #0b1d26;
+}
+
+option {
+    padding: 5px;
+}
+
+.padding-5{
+    margin-top: 30px;
+}
+.lost-btn{
+    margin-top: 30px;
+    margin-left: 45px;
+    padding: 7px 20px;
+    font-size: 20px;
+    border: 2px solid #d0ad53;
+    background-color: #d1bc85;
+    border-radius: 12px;
+}
+
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+    padding: 7px 20px;
+    font-size: 20px;
+    border: 2px solid #d0ad53; 
+    background-color: #d1bc85; 
+    color: #0b1d26; 
+    border-radius: 12px;
+    transition: color 0.3s ease, border-color 0.3s ease; 
+    z-index: 1; 
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%; 
+    height: 100%; 
+    background-color: #0b1d26;
+    transition: left 0.6s ease;
+    z-index: -100;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    border-color: #173d50; 
+    color: #d1bc85; 
+}
+
+.btn-primary:hover::before {
+    left: 0;
+}
